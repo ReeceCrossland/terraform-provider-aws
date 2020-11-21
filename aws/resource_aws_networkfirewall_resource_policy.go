@@ -33,10 +33,10 @@ func resourceAwsNetworkFirewallResourcePolicy() *schema.Resource {
 				DiffSuppressFunc: suppressEquivalentJsonDiffs,
 			},
 			"resource_arn": {
-				Type:         schema.TypeString,
-				Required:     true,
-				ForceNew:     true,
-				ValidateFunc: validateArn,
+				Type:     schema.TypeString,
+				Required: true,
+				ForceNew: true,
+				//ValidateFunc: validateArn,
 			},
 		},
 	}
